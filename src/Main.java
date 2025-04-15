@@ -2,18 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //자바에서의 배열은 자바스크립트와는 다르게 중괄호로 감싸주고 등록되는 모든 값의 자료형이 동일해야 한다.
 
-        System.out.print("이름을 입력해주세요:");
-        String name = scanner.nextLine();
+    String[] colors = {"red","green","blue"};
 
-        System.out.print("나이를 입력해주세요:");
-        int age = scanner.nextInt();
-
-        System.out.print("키를 입력해주세요:");
-        double height = scanner.nextDouble();
-
-        System.out.print(name + "\n" + age + "\n" + height);
+    System.out.println(colors[0]);
+    System.out.println(colors.length);
     }
 }
 
