@@ -1,13 +1,18 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        //자바에서의 배열은 자바스크립트와는 다르게 중괄호로 감싸주고 등록되는 모든 값의 자료형이 동일해야 한다.
+        //ArrayList란 클래스로 List 생성 시, 반환 받는 자료형이 무조건 문자열 형식으로 지정
+        List<String> names = new ArrayList<>();
+        names.add("David");
+        names.add("Emily");
+        names.add("James");
+        names.add("Chris");
+        System.out.println(names);
 
-    String[] colors = {"red","green","blue"};
-
-    System.out.println(colors[0]);
-    System.out.println(colors.length);
+        //자바에서 Array와 List의 차이
+        //Array: 고정형, 값 추가 불가
+        //List : 가변형, 값 추가 가능
     }
 }
 
